@@ -1,3 +1,7 @@
 main {
   padding-top: 70px;
 }
+
+.column-order-number {
+  width: 100px;
+}
