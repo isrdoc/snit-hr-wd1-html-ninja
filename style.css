@@ -5,3 +5,11 @@ main {
 .column-order-number {
   width: 100px;
 }
+
+.cell-padding-default {
+  padding: .75rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

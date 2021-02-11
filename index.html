@@ -38,6 +38,7 @@
   </nav>
 
   <main class="container">
+
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Courses</a></li>
@@ -47,7 +48,7 @@
 
     <h1 class="py-3">Web development 1</h1>
 
-    <table class="table">
+    <table class="table accordion" id="accordionTable">
       <thead>
         <tr>
           <th scope="col">Lesson</th>
@@ -56,9 +57,16 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>Instructions before the course</td>
+        <tr class="cursor-pointer" data-toggle="collapse" data-target="#coursesRow1" aria-expanded="true">
+          <td class="text-primary">Instructions before the course</td>
           <th scope="row" class="text-right font-weight-normal">0</th>
+        </tr>
+        <tr>
+          <td colspan="2" class="p-0">
+            <div data-parent="#accordionExample" id="coursesRow1" class="collapse show cell-padding-default">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex tellus, dictum quis risus sed, vulputate vulputate lacus. Phasellus id lacus in sem sollicitudin suscipit ac ut ligula. Nulla blandit porta tellus vel ultricies. Quisque sit amet lectus id massa sagittis finibus non in enim. Morbi congue sem urna, vel pulvinar massa aliquam id. Vivamus ac lacus aliquet leo dictum gravida id at ipsum. Etiam vestibulum tempus ex, eu bibendum ligula aliquet posuere. Nunc aliquet posuere magna, eu gravida nunc maximus at. Donec sagittis erat ut nibh suscipit, ac vestibulum nunc egestas. Vivamus arcu diam, commodo in rhoncus vitae, cursus sed augue. Quisque bibendum purus quam, elementum consectetur eros scelerisque auctor. Nam tristique eget lacus non maximus. Suspendisse aliquet et diam non aliquet. Sed nec neque nunc. Maecenas molestie, nunc vitae fringilla posuere, libero lacus porta ex, scelerisque commodo diam magna nec nulla.
+            </div>
+          </td>
         </tr>
 
         <tr>
@@ -72,6 +80,7 @@
         </tr>
       </tbody>
     </table>
+
   </main>
 
   <!-- Optional JavaScript -->
